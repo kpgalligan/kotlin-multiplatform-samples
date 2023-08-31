@@ -20,7 +20,20 @@ import SwiftUI
 struct iOSApp: App {
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("ContentView 1", systemImage: "plus")
+                    }
+                ContentView()
+                    .tabItem {
+                        Label("ContentView 2", systemImage: "clock")
+                    }
+                ContentView()
+                    .tabItem {
+                        Label("ContentView 3", systemImage: "message")
+                    }
+            }
 		}
 	}
 }

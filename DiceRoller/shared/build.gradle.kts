@@ -19,6 +19,7 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.kotlin.cocoapods)
     alias(libs.plugins.android.library)
+    id("co.touchlab.skie") version "0.4.17"
 }
 
 version = "1.0"
